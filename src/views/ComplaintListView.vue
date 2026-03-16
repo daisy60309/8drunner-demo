@@ -32,21 +32,21 @@ const tableData = [
     reportNo: '8D-2026-001',
     customer: 'ABC Electronics',
     title: '產品外殼裂痕客訴',
-    status: 'Open',
+    status: '已開案',
   },
   {
     id: 2,
     reportNo: '8D-2026-002',
     customer: 'XYZ Industrial',
     title: '出貨數量短缺',
-    status: 'Draft',
+    status: '草稿',
   },
   {
     id: 3,
     reportNo: '8D-2026-003',
     customer: 'Demo Customer',
     title: '功能異常',
-    status: 'Closed',
+    status: '已結案',
   },
 ]
 </script>

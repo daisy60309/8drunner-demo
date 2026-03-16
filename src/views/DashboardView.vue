@@ -1,5 +1,5 @@
 <template>
-  <MainLayout title="Dashboard">
+  <MainLayout title="營運總覽">
     <el-row :gutter="20">
       <el-col :span="8">
         <el-card>

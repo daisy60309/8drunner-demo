@@ -18,9 +18,9 @@
           <el-col :span="8">
             <el-form-item label="狀態">
               <el-select v-model="form.status" style="width: 100%">
-                <el-option label="Draft" value="Draft" />
-                <el-option label="Open" value="Open" />
-                <el-option label="Closed" value="Closed" />
+                <el-option label="草稿" value="草稿" />
+                <el-option label="已開案" value="已開案" />
+                <el-option label="已結案" value="已結案" />
               </el-select>
             </el-form-item>
           </el-col>
@@ -58,7 +58,7 @@
           <el-tab-pane label="D7 預防再發">
             <el-input v-model="form.d7" type="textarea" :rows="4" placeholder="尚未生成內容" />
           </el-tab-pane>
-          <el-tab-pane label="D8 結案表揚">
+          <el-tab-pane label="D8 結案與回饋">
             <el-input v-model="form.d8" type="textarea" :rows="4" placeholder="尚未生成內容" />
           </el-tab-pane>
         </el-tabs>
@@ -80,7 +80,7 @@ import MainLayout from '../layouts/MainLayout.vue'
 const form = reactive({
   reportNo: '8D-2026-001',
   customerName: 'ABC Electronics',
-  status: 'Open',
+  status: '已開案',
   complaintText: '客戶反映到貨後發現外殼有裂痕，影響組裝與外觀。',
   d1: '',
   d2: '',
